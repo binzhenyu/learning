@@ -20,30 +20,44 @@
 
             
            `//执行后一直回车即可`
-    3. 获取ssh-key 公钥内容（id_rsa.pub） 
-        * 使用命令
+* 获取ssh-key 公钥内容（id_rsa.pub） 
+     * 使用命令
             
-            ```cat id_rsa.pub```
+         ```cat id_rsa.pub```
 
-            //复制内容提交到github中
-    4. 验证ssh连接是否设置成功
+          //复制内容提交到github中
+* 验证ssh连接是否设置成功
              
-        * 使用命令
+     * 使用命令
             
-            `ssh -T git@github.com`
-    5. 初始化本地仓库
-        * 命令
+        `ssh -T git@github.com`
+* 初始化本地仓库
+     * 命令
 
-            `git init`
+         `git init`
 
-            `git add .`
+* 将代码推送至本地git库            
 
-            `git commit -m 'xxx'`
+    * 命令   
+        `git add .`
 
-    6. 将本地仓库连接远程仓库
-        * 命令
+* 将本地更改推送至暂存
 
-            `git remote add xxx xxx.git` 
-    7. 代码推送
+    * 命令
 
-        `git push`xxx（库） xxx（分支）          
+        `git commit -m 'xxx'`
+
+* 将本地仓库连接远程仓库
+    * 命令
+
+         `git remote add`xxx//名称 xxx.git//远程库ssh地址
+
+* 代码拉取
+    * 命令
+
+        `git pull`xxx//库 xxx//分支
+                
+* 代码推送
+     * 命令
+        
+        `git push`xxx//库 xxx//分支          
