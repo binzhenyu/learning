@@ -30,7 +30,7 @@
         `ssh -T git@github.com`
 
         ![](./jpg/通过ssh密钥连接github仓库.jpg)
-        
+
 * 初始化本地仓库
      * 命令
          `git init` 
@@ -43,10 +43,12 @@
 * 将本地仓库连接远程仓库
     * 命令
          `git remote add`xxx//名称 xxx.git//远程库ssh地址
-* 代码拉取
+* 远端库代码拉取到本地
     * 命令
         `git pull`xxx//库 xxx//分支       
-* 代码推送
+* 本地代码推送远端库
      * 命令
         `git push`xxx//库 xxx//分支          
-
+* 修改所连接的远端库
+    * 命令
+        `git remote set-url origin xxx.git`
