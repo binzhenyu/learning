@@ -9,6 +9,7 @@
         * 使用命令
             `cd ~/.ssh·`
             `ls`
+            
         ![](./jpg/查看本地主机是否存在ssh密钥.png)
     2. 生成ssh-key
         * 使用命令
@@ -17,16 +18,22 @@
 * 获取ssh-key 公钥内容（id_rsa.pub） 
      * 使用命令
          `cat id_rsa.pub`
+
         ![](./jpg/查看本地主机ssh公钥.jpg)
+
         `//复制内容提交到github的ssh-key中`
+
         ![](./jpg/公钥连接github.jpg)
+
 * 验证ssh连接是否设置成功  
      * 使用命令  
         `ssh -T git@github.com`
+
         ![](./jpg/通过ssh密钥连接github仓库.jpg)
+        
 * 初始化本地仓库
      * 命令
-         `git init`
+         `git init` 
 * 将本地更改推送至暂存           
     * 命令   
         `git add .`
